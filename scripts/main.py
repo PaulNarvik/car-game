@@ -36,7 +36,6 @@ while game.running:
     # Effacement de tous ce qui est tracé
     game.screen.fill(GRAY_0)
 
-
     # Actualisation de l'affichage
     pygame.display.flip()
     game.clock.tick(game.FPS)
