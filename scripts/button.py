@@ -18,7 +18,6 @@ class Button:
             - pos_y (int) : Position Y de l'origine du bouton (point en haut à gauche)
             - len_x (int) : Longueur du bouton sur l'axe X
             - len_y (int) : Longueur du bouton sur l'axe Y
-            - target (str) : Action à réaliser à l'appui
         - Paramètre pour une image en fond : 
             - bg_path (str) : Chemin de l'image servant de fond
         - Paramètre pour une couleur en fond :
@@ -32,7 +31,7 @@ class Button:
             - txt_color (tuple[int, int, int] | str) : Couleur du texte
     """
 
-    def __init__(self, bg_type : str, content_type : str, pos_x : int, pos_y : int, len_x : int, len_y : int, target : str, **kwargs : str | int | tuple[int, int, int]) -> None:
+    def __init__(self, bg_type : str, content_type : str, pos_x : int, pos_y : int, len_x : int, len_y : int, **kwargs : str | int | tuple[int, int, int]) -> None:
         # Analyse du type de fond
         if bg_type == "image":
             try:

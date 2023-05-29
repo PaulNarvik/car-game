@@ -37,7 +37,7 @@ while game.running:
     game.screen.fill(GRAY_0)
 
     #button = Button("color", "icon", 100, 100, 100, 100, bg_color=WHITE, icon_path="./assets/imgs/piece.png")
-    button = Button("image", "text", 100, 100, 200, 200, "ggg", bg_path="./assets/imgs/floor.png", text="Hello world", font="./assets/fonts/Chrusty.ttf", size=25, txt_color=WHITE)
+    button = Button(bg_type="image", content_type="text", pos_x=100, pos_y=100, len_x=200, len_y=200, bg_path="./assets/imgs/floor.png", text="Hello world", font="./assets/fonts/Chrusty.ttf", size=25, txt_color=WHITE)
     game.screen.blit(button.get_bg_surface(), button.get_bg_rect())
     game.screen.blit(button.get_content_surface(), button.get_content_rect())
 
