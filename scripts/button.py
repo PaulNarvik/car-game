@@ -32,7 +32,9 @@ class Button:
             - txt_color (tuple[int, int, int] | str) : Couleur du texte
         - Paramètre pour un bouton changeant la scène active :
             - target (str) : Scène visée par le bouton
-        - Paramètres pour un bouton changeant une variable
+        - Paramètres pour un bouton changeant une variable selon une valeur définie:
+            - var_name (str) : Nom de la variable à incrémenter
+            - step (int) : Pas de la variable
     """
 
     def __init__(self, bg_type : str, content_type : str, pos_x : int, pos_y : int, len_x : int, len_y : int, **kwargs : str | int | tuple[int, int, int]) -> None:
