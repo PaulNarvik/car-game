@@ -10,7 +10,7 @@ class Game:
         # Caractéristiques du moniteur et choix des dimensions
         self.SCREEN_MAX_SIZE = pygame.display.get_desktop_sizes()[0]
         self.SCREEN_WIDTH = round(self.SCREEN_MAX_SIZE[0] * 0.80)
-        self.SCREEN_HEIGHT = round(self.SCREEN_WIDTH * 90 / 16)
+        self.SCREEN_HEIGHT = round(self.SCREEN_WIDTH * 9 / 16)
 
         # Gestion du cas où la fenêtre dépasse de l'écran
         if self.SCREEN_HEIGHT > round(self.SCREEN_MAX_SIZE[1] * 0.95):
