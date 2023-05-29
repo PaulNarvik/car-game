@@ -14,6 +14,7 @@ class Button:
         - Paramètres généraux : 
             - bg_type (str) : Type de fond de bouton ("color", "image")
             - content_type (str) : Type de contenu dans le bouton ("icon", "text")
+            - button_mode (str) : Type de bouton ("move", "var_change")
             - pos_x (int) : Position X de l'origine du bouton (point en haut à gauche)
             - pos_y (int) : Position Y de l'origine du bouton (point en haut à gauche)
             - len_x (int) : Longueur du bouton sur l'axe X
@@ -22,13 +23,16 @@ class Button:
             - bg_path (str) : Chemin de l'image servant de fond
         - Paramètre pour une couleur en fond :
             - bg_color (tuple[int, int, int] | str) : Couleur du fond
-        - Paramètres pour une icône en contenu :
+        - Paramètre pour une icône en contenu :
             - icon_path (str) : Chemin de l'icône contenu dans le bouton
         - Paramètres pour un texte en contenu : 
             - text (str) : Texte contenu dans le bouton
             - font (str) : Police d'écriture du texte
             - size (int) : Taille du texte
             - txt_color (tuple[int, int, int] | str) : Couleur du texte
+        - Paramètre pour un bouton changeant la scène active :
+            - target (str) : Scène visée par le bouton
+        - Paramètres pour un bouton changeant une variable
     """
 
     def __init__(self, bg_type : str, content_type : str, pos_x : int, pos_y : int, len_x : int, len_y : int, **kwargs : str | int | tuple[int, int, int]) -> None:
