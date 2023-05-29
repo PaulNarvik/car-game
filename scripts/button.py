@@ -1,5 +1,7 @@
 """Fichier contenant la classe Button"""
 
+# Ajouter les récupérations de clics
+
 # Modules déjà existants
 import pygame
 

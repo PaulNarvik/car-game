@@ -36,17 +36,6 @@ while game.running:
     # Effacement de tous ce qui est tracé
     game.screen.fill(GRAY_0)
 
-    #button = Button("color", "icon", 100, 100, 100, 100, bg_color=WHITE, icon_path="./assets/imgs/piece.png")
-    button = Button(bg_type="image", content_type="text", pos_x=100, pos_y=100, len_x=200, len_y=200, bg_path="./assets/imgs/floor.png", text="Hello world", font="./assets/fonts/Chrusty.ttf", size=25, txt_color=WHITE)
-    game.screen.blit(button.get_bg_surface(), button.get_bg_rect())
-    game.screen.blit(button.get_content_surface(), button.get_content_rect())
-
-    if button.get_bg_rect().collidepoint(game.mouse_pos) and game.mouse[0]:
-        print("touched")
-        time.sleep(0.1)
-    
-    #text = Text("Hello", "./assets/fonts/Chrusty.ttf", 25, BLACK, 100, 100)
-    #game.screen.blit(text.get_surface(), text.get_rect())
 
     # Actualisation de l'affichage
     pygame.display.flip()
